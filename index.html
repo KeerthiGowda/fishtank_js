@@ -13,6 +13,21 @@ and Save as NameOfProgram.html -->
  <!-- Title to be displayed in browser -->
     <title>Template</title> 
 </head>
+ 
+ <!-- run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <script src="processing-1.4.8.min.js"></script> 
+ 
+ <!-- The name of the Program Source Code goes here -->
+ <script src="template.js"></script> 
+ 
+ <script type="application/javascript">
+  //get the canvas that Processing-js will use
+  var canvas = document.getElementById("mycanvas"); 
+  //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+  var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+ 
  <body>
   <h1>First</h1>
  </body>
